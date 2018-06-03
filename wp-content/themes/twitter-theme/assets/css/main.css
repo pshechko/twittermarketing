@@ -1,0 +1,502 @@
+@font-face {
+  font-family: "Verdana-Bold";
+  src: url(../fonts/verdanab.ttf);
+}
+
+.map-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.map-wrapper .marker {
+  position: absolute;
+  width: 20px;
+  z-index: 2;
+}
+
+.map-wrapper .marker svg {
+  position: relative;
+  left: -10px;
+  top: -32px;
+  width: 100%;
+  height: 32px;
+}
+
+.map-wrapper .marker svg path {
+  fill: #fff;
+  stroke: #261b48;
+  stroke-width: 2px;
+}
+
+#ukraine-map-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+#ukraine-map-text-overlay g {
+  fill: transparent;
+}
+
+#ukraine-map-text-overlay g[id] {
+  cursor: pointer;
+}
+
+#ukraine-map-text-overlay g[id] text {
+  fill: white;
+  cursor: pointer;
+  opacity: .55;
+  transition: opacity 0.3s;
+  font-family: 'Verdana-Bold';
+  font-size: 14px;
+  stroke: #433080;
+}
+
+#ukraine-map-text-overlay g[id]:hover text {
+  opacity: 0.8;
+}
+
+#ukraine-map g[percents="0"] path, #ukraine-map g:not([percents]) path {
+  fill: #eeebf7;
+}
+
+#ukraine-map g[percents="0"]:hover path, #ukraine-map g:not([percents]):hover path {
+  fill: white;
+}
+
+#ukraine-map g[id] {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#ukraine-map g[id][action="hover"] path {
+  opacity: .8;
+}
+
+#ukraine-map g[id] text {
+  fill: #fff;
+  cursor: pointer;
+  opacity: .55;
+  transition: opacity 0.3s;
+  font-family: 'Verdana-Bold';
+  font-size: 14px;
+}
+
+#ukraine-map g[id] path {
+  transition: opacity 0.3s;
+}
+
+#ukraine-map g[percents="1"] path {
+  fill: #ece9f6;
+}
+
+#ukraine-map g[percents="2"] path {
+  fill: #eae7f5;
+}
+
+#ukraine-map g[percents="3"] path {
+  fill: #e9e5f4;
+}
+
+#ukraine-map g[percents="4"] path {
+  fill: #e7e3f3;
+}
+
+#ukraine-map g[percents="5"] path {
+  fill: #e5e1f1;
+}
+
+#ukraine-map g[percents="6"] path {
+  fill: #e3dff0;
+}
+
+#ukraine-map g[percents="7"] path {
+  fill: #e2deef;
+}
+
+#ukraine-map g[percents="8"] path {
+  fill: #e0dcee;
+}
+
+#ukraine-map g[percents="9"] path {
+  fill: #dedaed;
+}
+
+#ukraine-map g[percents="10"] path {
+  fill: #ddd8eb;
+}
+
+#ukraine-map g[percents="11"] path {
+  fill: #dbd6ea;
+}
+
+#ukraine-map g[percents="12"] path {
+  fill: #d9d4e9;
+}
+
+#ukraine-map g[percents="13"] path {
+  fill: #d7d2e8;
+}
+
+#ukraine-map g[percents="14"] path {
+  fill: #d6d1e7;
+}
+
+#ukraine-map g[percents="15"] path {
+  fill: #d4cfe5;
+}
+
+#ukraine-map g[percents="16"] path {
+  fill: #d2cde4;
+}
+
+#ukraine-map g[percents="17"] path {
+  fill: #d1cbe3;
+}
+
+#ukraine-map g[percents="18"] path {
+  fill: #cfc9e2;
+}
+
+#ukraine-map g[percents="19"] path {
+  fill: #cdc7e1;
+}
+
+#ukraine-map g[percents="20"] path {
+  fill: #ccc5df;
+}
+
+#ukraine-map g[percents="21"] path {
+  fill: #cac3de;
+}
+
+#ukraine-map g[percents="22"] path {
+  fill: #c8c2dd;
+}
+
+#ukraine-map g[percents="23"] path {
+  fill: #c6c0dc;
+}
+
+#ukraine-map g[percents="24"] path {
+  fill: #c5bedb;
+}
+
+#ukraine-map g[percents="25"] path {
+  fill: #c3bcda;
+}
+
+#ukraine-map g[percents="26"] path {
+  fill: #c1bad8;
+}
+
+#ukraine-map g[percents="27"] path {
+  fill: #c0b8d7;
+}
+
+#ukraine-map g[percents="28"] path {
+  fill: #beb6d6;
+}
+
+#ukraine-map g[percents="29"] path {
+  fill: #bcb5d5;
+}
+
+#ukraine-map g[percents="30"] path {
+  fill: #bab3d4;
+}
+
+#ukraine-map g[percents="31"] path {
+  fill: #b9b1d2;
+}
+
+#ukraine-map g[percents="32"] path {
+  fill: #b7afd1;
+}
+
+#ukraine-map g[percents="33"] path {
+  fill: #b5add0;
+}
+
+#ukraine-map g[percents="34"] path {
+  fill: #b4abcf;
+}
+
+#ukraine-map g[percents="35"] path {
+  fill: #b2a9ce;
+}
+
+#ukraine-map g[percents="36"] path {
+  fill: #b0a7cc;
+}
+
+#ukraine-map g[percents="37"] path {
+  fill: #afa6cb;
+}
+
+#ukraine-map g[percents="38"] path {
+  fill: #ada4ca;
+}
+
+#ukraine-map g[percents="39"] path {
+  fill: #aba2c9;
+}
+
+#ukraine-map g[percents="40"] path {
+  fill: #a9a0c8;
+}
+
+#ukraine-map g[percents="41"] path {
+  fill: #a89ec6;
+}
+
+#ukraine-map g[percents="42"] path {
+  fill: #a69cc5;
+}
+
+#ukraine-map g[percents="43"] path {
+  fill: #a49ac4;
+}
+
+#ukraine-map g[percents="44"] path {
+  fill: #a399c3;
+}
+
+#ukraine-map g[percents="45"] path {
+  fill: #a197c2;
+}
+
+#ukraine-map g[percents="46"] path {
+  fill: #9f95c0;
+}
+
+#ukraine-map g[percents="47"] path {
+  fill: #9d93bf;
+}
+
+#ukraine-map g[percents="48"] path {
+  fill: #9c91be;
+}
+
+#ukraine-map g[percents="49"] path {
+  fill: #9a8fbd;
+}
+
+#ukraine-map g[percents="50"] path {
+  fill: #988dbc;
+}
+
+#ukraine-map g[percents="51"] path {
+  fill: #978bba;
+}
+
+#ukraine-map g[percents="52"] path {
+  fill: #958ab9;
+}
+
+#ukraine-map g[percents="53"] path {
+  fill: #9388b8;
+}
+
+#ukraine-map g[percents="54"] path {
+  fill: #9286b7;
+}
+
+#ukraine-map g[percents="55"] path {
+  fill: #9084b6;
+}
+
+#ukraine-map g[percents="56"] path {
+  fill: #8e82b5;
+}
+
+#ukraine-map g[percents="57"] path {
+  fill: #8c80b3;
+}
+
+#ukraine-map g[percents="58"] path {
+  fill: #8b7eb2;
+}
+
+#ukraine-map g[percents="59"] path {
+  fill: #897db1;
+}
+
+#ukraine-map g[percents="60"] path {
+  fill: #877bb0;
+}
+
+#ukraine-map g[percents="61"] path {
+  fill: #8679af;
+}
+
+#ukraine-map g[percents="62"] path {
+  fill: #8477ad;
+}
+
+#ukraine-map g[percents="63"] path {
+  fill: #8275ac;
+}
+
+#ukraine-map g[percents="64"] path {
+  fill: #8073ab;
+}
+
+#ukraine-map g[percents="65"] path {
+  fill: #7f71aa;
+}
+
+#ukraine-map g[percents="66"] path {
+  fill: #7d6fa9;
+}
+
+#ukraine-map g[percents="67"] path {
+  fill: #7b6ea7;
+}
+
+#ukraine-map g[percents="68"] path {
+  fill: #7a6ca6;
+}
+
+#ukraine-map g[percents="69"] path {
+  fill: #786aa5;
+}
+
+#ukraine-map g[percents="70"] path {
+  fill: #7668a4;
+}
+
+#ukraine-map g[percents="71"] path {
+  fill: #7466a3;
+}
+
+#ukraine-map g[percents="72"] path {
+  fill: #7364a1;
+}
+
+#ukraine-map g[percents="73"] path {
+  fill: #7162a0;
+}
+
+#ukraine-map g[percents="74"] path {
+  fill: #6f619f;
+}
+
+#ukraine-map g[percents="75"] path {
+  fill: #6e5f9e;
+}
+
+#ukraine-map g[percents="76"] path {
+  fill: #6c5d9d;
+}
+
+#ukraine-map g[percents="77"] path {
+  fill: #6a5b9b;
+}
+
+#ukraine-map g[percents="78"] path {
+  fill: #69599a;
+}
+
+#ukraine-map g[percents="79"] path {
+  fill: #675799;
+}
+
+#ukraine-map g[percents="80"] path {
+  fill: #655598;
+}
+
+#ukraine-map g[percents="81"] path {
+  fill: #635397;
+}
+
+#ukraine-map g[percents="82"] path {
+  fill: #625295;
+}
+
+#ukraine-map g[percents="83"] path {
+  fill: #605094;
+}
+
+#ukraine-map g[percents="84"] path {
+  fill: #5e4e93;
+}
+
+#ukraine-map g[percents="85"] path {
+  fill: #5d4c92;
+}
+
+#ukraine-map g[percents="86"] path {
+  fill: #5b4a91;
+}
+
+#ukraine-map g[percents="87"] path {
+  fill: #594890;
+}
+
+#ukraine-map g[percents="88"] path {
+  fill: #57468e;
+}
+
+#ukraine-map g[percents="89"] path {
+  fill: #56458d;
+}
+
+#ukraine-map g[percents="90"] path {
+  fill: #54438c;
+}
+
+#ukraine-map g[percents="91"] path {
+  fill: #52418b;
+}
+
+#ukraine-map g[percents="92"] path {
+  fill: #513f8a;
+}
+
+#ukraine-map g[percents="93"] path {
+  fill: #4f3d88;
+}
+
+#ukraine-map g[percents="94"] path {
+  fill: #4d3b87;
+}
+
+#ukraine-map g[percents="95"] path {
+  fill: #4c3986;
+}
+
+#ukraine-map g[percents="96"] path {
+  fill: #4a3785;
+}
+
+#ukraine-map g[percents="97"] path {
+  fill: #483684;
+}
+
+#ukraine-map g[percents="98"] path {
+  fill: #463482;
+}
+
+#ukraine-map g[percents="99"] path {
+  fill: #453281;
+}
+
+#ukraine-map g[percents="100"] path {
+  fill: #433080;
+}
+
+.region-circle {
+  position: absolute;
+  border: 1px solid red;
+  border-radius: 85%;
+}
+
+.region-circle.rendered {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #000;
+  border-style: dashed;
+}
+/*# sourceMappingURL=main.css.map */
