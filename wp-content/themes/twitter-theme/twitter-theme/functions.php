@@ -62,7 +62,6 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('class-circle');
     wp_enqueue_script('map-script');
     wp_enqueue_script('custom-charts-script');
-    wp_enqueue_script('bootstrap-script');
 });
 
 add_action('wp_print_styles', function () {

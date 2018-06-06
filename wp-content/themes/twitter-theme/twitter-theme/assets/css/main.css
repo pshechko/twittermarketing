@@ -2,57 +2,27 @@
   font-family: "Verdana-Bold";
   src: url(../fonts/verdanab.ttf);
 }
-.flex-wrapper {
-  display: flex;
-}
-.flex-wrapper.horizontal-align-center {
-  justify-content: center;
-}
 
-#map-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
-#map-header + section {
-  background: #fff;
-  position: relative;
-}
-#map-header + section:before {
-  content: "";
-  position: absolute;
-  top: -100px;
-  width: 100%;
-  height: 100px;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.1) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.1) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.1) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#1a000000",GradientType=0 );
-  /* IE6-9 */
-}
-#map-header .map-wrapper {
+.map-wrapper {
   position: relative;
   z-index: 1;
-  line-height: 0;
 }
-#map-header .map-wrapper .marker {
+
+.map-wrapper .marker {
   position: absolute;
   width: 20px;
   z-index: 2;
 }
-#map-header .map-wrapper .marker svg {
+
+.map-wrapper .marker svg {
   position: relative;
   left: -10px;
   top: -32px;
   width: 100%;
   height: 32px;
 }
-#map-header .map-wrapper .marker svg path {
+
+.map-wrapper .marker svg path {
   fill: #fff;
   stroke: #261b48;
   stroke-width: 2px;
@@ -65,345 +35,455 @@
   width: 100%;
   z-index: 3;
 }
+
 #ukraine-map-text-overlay g {
   fill: transparent;
 }
+
 #ukraine-map-text-overlay g[id] {
   cursor: pointer;
 }
+
 #ukraine-map-text-overlay g[id] text {
   fill: white;
   cursor: pointer;
-  opacity: 0.55;
+  opacity: .55;
   transition: opacity 0.3s;
-  font-family: "Verdana-Bold";
+  font-family: 'Verdana-Bold';
   font-size: 14px;
   stroke: #433080;
 }
+
 #ukraine-map-text-overlay g[id]:hover text {
   opacity: 0.8;
 }
+
 #ukraine-map g[percents="0"] path, #ukraine-map g:not([percents]) path {
   fill: #eeebf7;
 }
+
 #ukraine-map g[percents="0"]:hover path, #ukraine-map g:not([percents]):hover path {
   fill: white;
 }
+
 #ukraine-map g[id] {
   cursor: pointer;
   transition: opacity 0.3s;
 }
-#ukraine-map g[id][action=hover] path {
-  opacity: 0.8;
+
+#ukraine-map g[id][action="hover"] path {
+  opacity: .8;
 }
+
 #ukraine-map g[id] text {
   fill: #fff;
   cursor: pointer;
-  opacity: 0.55;
+  opacity: .55;
   transition: opacity 0.3s;
-  font-family: "Verdana-Bold";
+  font-family: 'Verdana-Bold';
   font-size: 14px;
 }
+
 #ukraine-map g[id] path {
   transition: opacity 0.3s;
 }
+
 #ukraine-map g[percents="1"] path {
   fill: #ece9f6;
 }
+
 #ukraine-map g[percents="2"] path {
-  fill: #ebe7f5;
+  fill: #eae7f5;
 }
+
 #ukraine-map g[percents="3"] path {
-  fill: #e9e5f3;
+  fill: #e9e5f4;
 }
+
 #ukraine-map g[percents="4"] path {
-  fill: #e7e4f2;
+  fill: #e7e3f3;
 }
+
 #ukraine-map g[percents="5"] path {
-  fill: #e5e2f1;
+  fill: #e5e1f1;
 }
+
 #ukraine-map g[percents="6"] path {
-  fill: #e4e0f0;
+  fill: #e3dff0;
 }
+
 #ukraine-map g[percents="7"] path {
   fill: #e2deef;
 }
+
 #ukraine-map g[percents="8"] path {
-  fill: #e0dced;
+  fill: #e0dcee;
 }
+
 #ukraine-map g[percents="9"] path {
-  fill: #dfdaec;
+  fill: #dedaed;
 }
+
 #ukraine-map g[percents="10"] path {
   fill: #ddd8eb;
 }
+
 #ukraine-map g[percents="11"] path {
   fill: #dbd6ea;
 }
+
 #ukraine-map g[percents="12"] path {
-  fill: #d9d5e9;
+  fill: #d9d4e9;
 }
+
 #ukraine-map g[percents="13"] path {
-  fill: #d8d3e8;
+  fill: #d7d2e8;
 }
+
 #ukraine-map g[percents="14"] path {
-  fill: #d6d1e6;
+  fill: #d6d1e7;
 }
+
 #ukraine-map g[percents="15"] path {
   fill: #d4cfe5;
 }
+
 #ukraine-map g[percents="16"] path {
-  fill: #d3cde4;
+  fill: #d2cde4;
 }
+
 #ukraine-map g[percents="17"] path {
   fill: #d1cbe3;
 }
+
 #ukraine-map g[percents="18"] path {
   fill: #cfc9e2;
 }
+
 #ukraine-map g[percents="19"] path {
-  fill: #cec7e0;
+  fill: #cdc7e1;
 }
+
 #ukraine-map g[percents="20"] path {
-  fill: #ccc6df;
+  fill: #ccc5df;
 }
+
 #ukraine-map g[percents="21"] path {
-  fill: #cac4de;
+  fill: #cac3de;
 }
+
 #ukraine-map g[percents="22"] path {
   fill: #c8c2dd;
 }
+
 #ukraine-map g[percents="23"] path {
-  fill: #c7c0dc;
+  fill: #c6c0dc;
 }
+
 #ukraine-map g[percents="24"] path {
-  fill: #c5beda;
+  fill: #c5bedb;
 }
+
 #ukraine-map g[percents="25"] path {
-  fill: #c3bcd9;
+  fill: #c3bcda;
 }
+
 #ukraine-map g[percents="26"] path {
-  fill: #c2bad8;
+  fill: #c1bad8;
 }
+
 #ukraine-map g[percents="27"] path {
-  fill: #c0b9d7;
+  fill: #c0b8d7;
 }
+
 #ukraine-map g[percents="28"] path {
-  fill: #beb7d6;
+  fill: #beb6d6;
 }
+
 #ukraine-map g[percents="29"] path {
-  fill: #bcb5d4;
+  fill: #bcb5d5;
 }
+
 #ukraine-map g[percents="30"] path {
-  fill: #bbb3d3;
+  fill: #bab3d4;
 }
+
 #ukraine-map g[percents="31"] path {
   fill: #b9b1d2;
 }
+
 #ukraine-map g[percents="32"] path {
   fill: #b7afd1;
 }
+
 #ukraine-map g[percents="33"] path {
-  fill: #b6add0;
+  fill: #b5add0;
 }
+
 #ukraine-map g[percents="34"] path {
   fill: #b4abcf;
 }
+
 #ukraine-map g[percents="35"] path {
-  fill: #b2aacd;
+  fill: #b2a9ce;
 }
+
 #ukraine-map g[percents="36"] path {
-  fill: #b0a8cc;
+  fill: #b0a7cc;
 }
+
 #ukraine-map g[percents="37"] path {
   fill: #afa6cb;
 }
+
 #ukraine-map g[percents="38"] path {
   fill: #ada4ca;
 }
+
 #ukraine-map g[percents="39"] path {
   fill: #aba2c9;
 }
+
 #ukraine-map g[percents="40"] path {
-  fill: #aaa0c7;
+  fill: #a9a0c8;
 }
+
 #ukraine-map g[percents="41"] path {
   fill: #a89ec6;
 }
+
 #ukraine-map g[percents="42"] path {
   fill: #a69cc5;
 }
+
 #ukraine-map g[percents="43"] path {
-  fill: #a49bc4;
+  fill: #a49ac4;
 }
+
 #ukraine-map g[percents="44"] path {
   fill: #a399c3;
 }
+
 #ukraine-map g[percents="45"] path {
-  fill: #a197c1;
+  fill: #a197c2;
 }
+
 #ukraine-map g[percents="46"] path {
   fill: #9f95c0;
 }
+
 #ukraine-map g[percents="47"] path {
-  fill: #9e93bf;
+  fill: #9d93bf;
 }
+
 #ukraine-map g[percents="48"] path {
   fill: #9c91be;
 }
+
 #ukraine-map g[percents="49"] path {
   fill: #9a8fbd;
 }
+
 #ukraine-map g[percents="50"] path {
-  fill: #998ebc;
+  fill: #988dbc;
 }
+
 #ukraine-map g[percents="51"] path {
-  fill: #978cba;
+  fill: #978bba;
 }
+
 #ukraine-map g[percents="52"] path {
   fill: #958ab9;
 }
+
 #ukraine-map g[percents="53"] path {
   fill: #9388b8;
 }
+
 #ukraine-map g[percents="54"] path {
   fill: #9286b7;
 }
+
 #ukraine-map g[percents="55"] path {
   fill: #9084b6;
 }
+
 #ukraine-map g[percents="56"] path {
-  fill: #8e82b4;
+  fill: #8e82b5;
 }
+
 #ukraine-map g[percents="57"] path {
-  fill: #8d80b3;
+  fill: #8c80b3;
 }
+
 #ukraine-map g[percents="58"] path {
-  fill: #8b7fb2;
+  fill: #8b7eb2;
 }
+
 #ukraine-map g[percents="59"] path {
   fill: #897db1;
 }
+
 #ukraine-map g[percents="60"] path {
   fill: #877bb0;
 }
+
 #ukraine-map g[percents="61"] path {
-  fill: #8679ae;
+  fill: #8679af;
 }
+
 #ukraine-map g[percents="62"] path {
   fill: #8477ad;
 }
+
 #ukraine-map g[percents="63"] path {
   fill: #8275ac;
 }
+
 #ukraine-map g[percents="64"] path {
-  fill: #8173ab;
+  fill: #8073ab;
 }
+
 #ukraine-map g[percents="65"] path {
   fill: #7f71aa;
 }
+
 #ukraine-map g[percents="66"] path {
-  fill: #7d70a8;
+  fill: #7d6fa9;
 }
+
 #ukraine-map g[percents="67"] path {
   fill: #7b6ea7;
 }
+
 #ukraine-map g[percents="68"] path {
   fill: #7a6ca6;
 }
+
 #ukraine-map g[percents="69"] path {
   fill: #786aa5;
 }
+
 #ukraine-map g[percents="70"] path {
   fill: #7668a4;
 }
+
 #ukraine-map g[percents="71"] path {
-  fill: #7566a3;
+  fill: #7466a3;
 }
+
 #ukraine-map g[percents="72"] path {
   fill: #7364a1;
 }
+
 #ukraine-map g[percents="73"] path {
   fill: #7162a0;
 }
+
 #ukraine-map g[percents="74"] path {
   fill: #6f619f;
 }
+
 #ukraine-map g[percents="75"] path {
   fill: #6e5f9e;
 }
+
 #ukraine-map g[percents="76"] path {
   fill: #6c5d9d;
 }
+
 #ukraine-map g[percents="77"] path {
   fill: #6a5b9b;
 }
+
 #ukraine-map g[percents="78"] path {
   fill: #69599a;
 }
+
 #ukraine-map g[percents="79"] path {
   fill: #675799;
 }
+
 #ukraine-map g[percents="80"] path {
   fill: #655598;
 }
+
 #ukraine-map g[percents="81"] path {
-  fill: #635497;
+  fill: #635397;
 }
+
 #ukraine-map g[percents="82"] path {
   fill: #625295;
 }
+
 #ukraine-map g[percents="83"] path {
   fill: #605094;
 }
+
 #ukraine-map g[percents="84"] path {
   fill: #5e4e93;
 }
+
 #ukraine-map g[percents="85"] path {
   fill: #5d4c92;
 }
+
 #ukraine-map g[percents="86"] path {
   fill: #5b4a91;
 }
+
 #ukraine-map g[percents="87"] path {
-  fill: #59488f;
+  fill: #594890;
 }
+
 #ukraine-map g[percents="88"] path {
-  fill: #58468e;
+  fill: #57468e;
 }
+
 #ukraine-map g[percents="89"] path {
   fill: #56458d;
 }
+
 #ukraine-map g[percents="90"] path {
   fill: #54438c;
 }
+
 #ukraine-map g[percents="91"] path {
   fill: #52418b;
 }
+
 #ukraine-map g[percents="92"] path {
   fill: #513f8a;
 }
+
 #ukraine-map g[percents="93"] path {
   fill: #4f3d88;
 }
+
 #ukraine-map g[percents="94"] path {
   fill: #4d3b87;
 }
+
 #ukraine-map g[percents="95"] path {
   fill: #4c3986;
 }
+
 #ukraine-map g[percents="96"] path {
   fill: #4a3785;
 }
+
 #ukraine-map g[percents="97"] path {
   fill: #483684;
 }
+
 #ukraine-map g[percents="98"] path {
   fill: #463482;
 }
+
 #ukraine-map g[percents="99"] path {
   fill: #453281;
 }
+
 #ukraine-map g[percents="100"] path {
   fill: #433080;
 }
@@ -413,9 +493,7 @@
   border: 1px solid red;
   border-radius: 85%;
 }
-.region-circle:not(.visible) {
-  display: none;
-}
+
 .region-circle.rendered {
   background: rgba(255, 255, 255, 0.1);
   border-color: #000;
@@ -425,9 +503,11 @@
 .display-table {
   display: table;
 }
+
 .display-table > * {
   display: table-row;
 }
+
 .display-table > * > * {
   display: table-cell;
 }
@@ -455,15 +535,19 @@ section {
 .top-wrapper:not(.expanded) > .region:nth-child(5) ~ .region {
   display: none;
 }
+
 .top-wrapper:not(.expanded) + button > .for-expanded {
   display: none;
 }
+
 .top-wrapper.expanded + button > .for-collapsed {
   display: none;
 }
+
 .top-wrapper .region > div {
   position: relative;
 }
+
 .top-wrapper .region > div:first-child:before {
   content: "";
   position: absolute;
@@ -472,305 +556,404 @@ section {
   bottom: 2px;
   background: rgba(67, 48, 128, 0.18);
 }
+
 .top-wrapper .region > div[data-percents="1"]:first-child:before {
   width: 1%;
 }
+
 .top-wrapper .region > div[data-percents="2"]:first-child:before {
   width: 2%;
 }
+
 .top-wrapper .region > div[data-percents="3"]:first-child:before {
   width: 3%;
 }
+
 .top-wrapper .region > div[data-percents="4"]:first-child:before {
   width: 4%;
 }
+
 .top-wrapper .region > div[data-percents="5"]:first-child:before {
   width: 5%;
 }
+
 .top-wrapper .region > div[data-percents="6"]:first-child:before {
   width: 6%;
 }
+
 .top-wrapper .region > div[data-percents="7"]:first-child:before {
   width: 7%;
 }
+
 .top-wrapper .region > div[data-percents="8"]:first-child:before {
   width: 8%;
 }
+
 .top-wrapper .region > div[data-percents="9"]:first-child:before {
   width: 9%;
 }
+
 .top-wrapper .region > div[data-percents="10"]:first-child:before {
   width: 10%;
 }
+
 .top-wrapper .region > div[data-percents="11"]:first-child:before {
   width: 11%;
 }
+
 .top-wrapper .region > div[data-percents="12"]:first-child:before {
   width: 12%;
 }
+
 .top-wrapper .region > div[data-percents="13"]:first-child:before {
   width: 13%;
 }
+
 .top-wrapper .region > div[data-percents="14"]:first-child:before {
   width: 14%;
 }
+
 .top-wrapper .region > div[data-percents="15"]:first-child:before {
   width: 15%;
 }
+
 .top-wrapper .region > div[data-percents="16"]:first-child:before {
   width: 16%;
 }
+
 .top-wrapper .region > div[data-percents="17"]:first-child:before {
   width: 17%;
 }
+
 .top-wrapper .region > div[data-percents="18"]:first-child:before {
   width: 18%;
 }
+
 .top-wrapper .region > div[data-percents="19"]:first-child:before {
   width: 19%;
 }
+
 .top-wrapper .region > div[data-percents="20"]:first-child:before {
   width: 20%;
 }
+
 .top-wrapper .region > div[data-percents="21"]:first-child:before {
   width: 21%;
 }
+
 .top-wrapper .region > div[data-percents="22"]:first-child:before {
   width: 22%;
 }
+
 .top-wrapper .region > div[data-percents="23"]:first-child:before {
   width: 23%;
 }
+
 .top-wrapper .region > div[data-percents="24"]:first-child:before {
   width: 24%;
 }
+
 .top-wrapper .region > div[data-percents="25"]:first-child:before {
   width: 25%;
 }
+
 .top-wrapper .region > div[data-percents="26"]:first-child:before {
   width: 26%;
 }
+
 .top-wrapper .region > div[data-percents="27"]:first-child:before {
   width: 27%;
 }
+
 .top-wrapper .region > div[data-percents="28"]:first-child:before {
   width: 28%;
 }
+
 .top-wrapper .region > div[data-percents="29"]:first-child:before {
   width: 29%;
 }
+
 .top-wrapper .region > div[data-percents="30"]:first-child:before {
   width: 30%;
 }
+
 .top-wrapper .region > div[data-percents="31"]:first-child:before {
   width: 31%;
 }
+
 .top-wrapper .region > div[data-percents="32"]:first-child:before {
   width: 32%;
 }
+
 .top-wrapper .region > div[data-percents="33"]:first-child:before {
   width: 33%;
 }
+
 .top-wrapper .region > div[data-percents="34"]:first-child:before {
   width: 34%;
 }
+
 .top-wrapper .region > div[data-percents="35"]:first-child:before {
   width: 35%;
 }
+
 .top-wrapper .region > div[data-percents="36"]:first-child:before {
   width: 36%;
 }
+
 .top-wrapper .region > div[data-percents="37"]:first-child:before {
   width: 37%;
 }
+
 .top-wrapper .region > div[data-percents="38"]:first-child:before {
   width: 38%;
 }
+
 .top-wrapper .region > div[data-percents="39"]:first-child:before {
   width: 39%;
 }
+
 .top-wrapper .region > div[data-percents="40"]:first-child:before {
   width: 40%;
 }
+
 .top-wrapper .region > div[data-percents="41"]:first-child:before {
   width: 41%;
 }
+
 .top-wrapper .region > div[data-percents="42"]:first-child:before {
   width: 42%;
 }
+
 .top-wrapper .region > div[data-percents="43"]:first-child:before {
   width: 43%;
 }
+
 .top-wrapper .region > div[data-percents="44"]:first-child:before {
   width: 44%;
 }
+
 .top-wrapper .region > div[data-percents="45"]:first-child:before {
   width: 45%;
 }
+
 .top-wrapper .region > div[data-percents="46"]:first-child:before {
   width: 46%;
 }
+
 .top-wrapper .region > div[data-percents="47"]:first-child:before {
   width: 47%;
 }
+
 .top-wrapper .region > div[data-percents="48"]:first-child:before {
   width: 48%;
 }
+
 .top-wrapper .region > div[data-percents="49"]:first-child:before {
   width: 49%;
 }
+
 .top-wrapper .region > div[data-percents="50"]:first-child:before {
   width: 50%;
 }
+
 .top-wrapper .region > div[data-percents="51"]:first-child:before {
   width: 51%;
 }
+
 .top-wrapper .region > div[data-percents="52"]:first-child:before {
   width: 52%;
 }
+
 .top-wrapper .region > div[data-percents="53"]:first-child:before {
   width: 53%;
 }
+
 .top-wrapper .region > div[data-percents="54"]:first-child:before {
   width: 54%;
 }
+
 .top-wrapper .region > div[data-percents="55"]:first-child:before {
   width: 55%;
 }
+
 .top-wrapper .region > div[data-percents="56"]:first-child:before {
   width: 56%;
 }
+
 .top-wrapper .region > div[data-percents="57"]:first-child:before {
   width: 57%;
 }
+
 .top-wrapper .region > div[data-percents="58"]:first-child:before {
   width: 58%;
 }
+
 .top-wrapper .region > div[data-percents="59"]:first-child:before {
   width: 59%;
 }
+
 .top-wrapper .region > div[data-percents="60"]:first-child:before {
   width: 60%;
 }
+
 .top-wrapper .region > div[data-percents="61"]:first-child:before {
   width: 61%;
 }
+
 .top-wrapper .region > div[data-percents="62"]:first-child:before {
   width: 62%;
 }
+
 .top-wrapper .region > div[data-percents="63"]:first-child:before {
   width: 63%;
 }
+
 .top-wrapper .region > div[data-percents="64"]:first-child:before {
   width: 64%;
 }
+
 .top-wrapper .region > div[data-percents="65"]:first-child:before {
   width: 65%;
 }
+
 .top-wrapper .region > div[data-percents="66"]:first-child:before {
   width: 66%;
 }
+
 .top-wrapper .region > div[data-percents="67"]:first-child:before {
   width: 67%;
 }
+
 .top-wrapper .region > div[data-percents="68"]:first-child:before {
   width: 68%;
 }
+
 .top-wrapper .region > div[data-percents="69"]:first-child:before {
   width: 69%;
 }
+
 .top-wrapper .region > div[data-percents="70"]:first-child:before {
   width: 70%;
 }
+
 .top-wrapper .region > div[data-percents="71"]:first-child:before {
   width: 71%;
 }
+
 .top-wrapper .region > div[data-percents="72"]:first-child:before {
   width: 72%;
 }
+
 .top-wrapper .region > div[data-percents="73"]:first-child:before {
   width: 73%;
 }
+
 .top-wrapper .region > div[data-percents="74"]:first-child:before {
   width: 74%;
 }
+
 .top-wrapper .region > div[data-percents="75"]:first-child:before {
   width: 75%;
 }
+
 .top-wrapper .region > div[data-percents="76"]:first-child:before {
   width: 76%;
 }
+
 .top-wrapper .region > div[data-percents="77"]:first-child:before {
   width: 77%;
 }
+
 .top-wrapper .region > div[data-percents="78"]:first-child:before {
   width: 78%;
 }
+
 .top-wrapper .region > div[data-percents="79"]:first-child:before {
   width: 79%;
 }
+
 .top-wrapper .region > div[data-percents="80"]:first-child:before {
   width: 80%;
 }
+
 .top-wrapper .region > div[data-percents="81"]:first-child:before {
   width: 81%;
 }
+
 .top-wrapper .region > div[data-percents="82"]:first-child:before {
   width: 82%;
 }
+
 .top-wrapper .region > div[data-percents="83"]:first-child:before {
   width: 83%;
 }
+
 .top-wrapper .region > div[data-percents="84"]:first-child:before {
   width: 84%;
 }
+
 .top-wrapper .region > div[data-percents="85"]:first-child:before {
   width: 85%;
 }
+
 .top-wrapper .region > div[data-percents="86"]:first-child:before {
   width: 86%;
 }
+
 .top-wrapper .region > div[data-percents="87"]:first-child:before {
   width: 87%;
 }
+
 .top-wrapper .region > div[data-percents="88"]:first-child:before {
   width: 88%;
 }
+
 .top-wrapper .region > div[data-percents="89"]:first-child:before {
   width: 89%;
 }
+
 .top-wrapper .region > div[data-percents="90"]:first-child:before {
   width: 90%;
 }
+
 .top-wrapper .region > div[data-percents="91"]:first-child:before {
   width: 91%;
 }
+
 .top-wrapper .region > div[data-percents="92"]:first-child:before {
   width: 92%;
 }
+
 .top-wrapper .region > div[data-percents="93"]:first-child:before {
   width: 93%;
 }
+
 .top-wrapper .region > div[data-percents="94"]:first-child:before {
   width: 94%;
 }
+
 .top-wrapper .region > div[data-percents="95"]:first-child:before {
   width: 95%;
 }
+
 .top-wrapper .region > div[data-percents="96"]:first-child:before {
   width: 96%;
 }
+
 .top-wrapper .region > div[data-percents="97"]:first-child:before {
   width: 97%;
 }
+
 .top-wrapper .region > div[data-percents="98"]:first-child:before {
   width: 98%;
 }
+
 .top-wrapper .region > div[data-percents="99"]:first-child:before {
   width: 99%;
 }
+
 .top-wrapper .region > div[data-percents="100"]:first-child:before {
   width: 100%;
 }
-
 /*# sourceMappingURL=main.css.map */

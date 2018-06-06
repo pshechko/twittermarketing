@@ -1,18 +1,11 @@
 class Circle {
-    constructor(crd, regionId) {
+    constructor(crd) {
         this.crd = crd;
-        this.regionId = regionId;
         this.ukraineEdges = window.ukraineEdges;
     }
 
-    render() {
-		return jQuery(classCircleArgs.circlePattern)
-            .attr('data-region-id', this.regionId)
-            .attr('lat', this.crd.latitude)
-            .attr('long', this.crd.longtitude)
-            .attr('radius', this.crd.radius)
-            .addClass('rendered')
-            .css(this.getCSSPosition());
+    render(crd = false) {
+		return jQuery(classCircleArgs.circlePattern).attr('lat', this.crd.latitude).attr('long', this.crd.longtitude).attr('radius', this.crd.radius).addClass('rendered').css(this.getCSSPosition());
     }
 
     getCSSPosition(crd = false) {

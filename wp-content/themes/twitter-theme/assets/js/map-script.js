@@ -6,41 +6,37 @@ window.markers = [
     {
         lat: 50.012348,
         long: 36.229080
-    },
-    {
-        lat: 49.355236,
-        long: 23.516203
     }
-]
-
+];
 
 
 const EARTH_RADIUS = 6372795;
+const UKRAINE_PROPORTIONS = 1.5086790039438838;
 
-let calculateTheDistance  = (φA, λA, φB, λB) => {
+let calculateTheDistance = (φA, λA, φB, λB) => {
 
     let lat1 = φA * Math.PI / 180,
-     lat2 = φB * Math.PI / 180,
-	 long1 = λA * Math.PI / 180,
-     long2 = λB * Math.PI / 180;
- 
+        lat2 = φB * Math.PI / 180,
+        long1 = λA * Math.PI / 180,
+        long2 = λB * Math.PI / 180;
+
 
     let cl1 = Math.cos(lat1),
-    cl2 = Math.cos(lat2),
-    sl1 = Math.sin(lat1),
-    sl2 = Math.sin(lat2);
-	
+        cl2 = Math.cos(lat2),
+        sl1 = Math.sin(lat1),
+        sl2 = Math.sin(lat2);
+
     let delta = long2 - long1,
-    cdelta = Math.cos(delta),
-    sdelta = Math.sin(delta);
- 
+        cdelta = Math.cos(delta),
+        sdelta = Math.sin(delta);
+
 
     let y = Math.sqrt(Math.pow(cl2 * sdelta, 2) + Math.pow(cl1 * sl2 - sl1 * cl2 * cdelta, 2));
     let x = sl1 * sl2 + cl1 * cl2 * cdelta;
 
     let ad = Math.atan2(y, x);
     let dist = ad * EARTH_RADIUS;
- 
+
     return dist;
 }
 
@@ -61,6 +57,8 @@ jQuery(document).ready(function () {
 
     mapOverlay.insertAfter(mapBackground);
 
+    resizeMap();
+
     window.ukraineEdges = {
         north: 52.379118,
         east: 40.198056,
@@ -73,15 +71,13 @@ jQuery(document).ready(function () {
             }
         }
     };
-	
-	window.ukraineEdges.width = calculateTheDistance(ukraineEdges.north, ukraineEdges.west, ukraineEdges.north, ukraineEdges.east);
-	window.ukraineEdges.height = (mapWrapper.outerHeight() * ukraineEdges.width)/mapWrapper.outerWidth();
 
-    let min = 30,
-        max = 567;
+    window.ukraineEdges.width = calculateTheDistance(ukraineEdges.north, ukraineEdges.west, ukraineEdges.north, ukraineEdges.east);
+    window.ukraineEdges.height = (mapWrapper.outerHeight() * ukraineEdges.width) / mapWrapper.outerWidth();
 
-	window.regionCircles = [];
-	
+
+    window.regionCircles = [];
+
     for (let iso in window.regions) {
 
 
@@ -99,75 +95,114 @@ jQuery(document).ready(function () {
         //console.log(min, max, value, percentage);
 
         regionElement.attr('percents', regions[iso].percentage);
-		
-		if(regions[iso].hasOwnProperty('circles'))
-			window.regionCircles = window.regionCircles.concat(regions[iso].circles);
-		
+
+        if (regions[iso].hasOwnProperty('circles')) {
+            window.regionCircles = window.regionCircles.concat(regions[iso].circles);
+
+            for (let crd of regions[iso].circles) {
+                newCircle = new Circle(crd, iso);
+                newCircle.append();
+            }
+        }
+
     }
 
-    for(let crd of markers){
+    for (let crd of markers) {
         newMarker = new Marker(crd);
         newMarker.append();
     }
-	
-	for(let crd of regionCircles){
-        newCircle = new Circle(crd);
-        newCircle.append();
+
+    for (let crd of regionCircles) {
+
     }
 
 })
 
 jQuery(document).on('click', '#ukraine-map-text-overlay g[id] path, g[id] text', function () {
-    alert("Всё будет хорошо!");
+    var $this = jQuery(this),
+        group = $this.closest('[id*="UA"]'),
+        regionId = group.attr('id').replace('overlay-UA-', '');
+        jQuery(`#modal-region-${regionId}`).modal()
+
 }).on('mouseover', '#ukraine-map-text-overlay g[id] path, g[id] text', function () {
     let group = jQuery(this).closest('g[id]'),
         id = group.attr('id').replace(/overlay-/g, "");
 
-    jQuery(`#${id}`).attr('action','hover');
+    jQuery(`#${id}`).attr('action', 'hover');
 }).on('mouseout', '#ukraine-map-text-overlay g[id] path, g[id] text', function () {
     let group = jQuery(this).closest('g[id]'),
         id = group.attr('id').replace(/overlay-/g, "");
 
-   jQuery(`#${id}`).removeAttr('action');
-})
-
-let getCircles = ()=>{
-	window.circles = [];
-jQuery('.region-circle:not(.rendered[lat][long][radius])').each(function(){
-	var circle = jQuery(this), 
-		wrapper = circle.parent(),
-		width = circle.outerWidth(),
-		height = circle.outerHeight(),
-		left = parseFloat(circle.css('left')),
-		top = parseFloat(circle.css('top')),
-		wrapperWidth = wrapper.outerWidth(),
-		wrapperHeight = wrapper.outerHeight(),
-		deltaLat = ukraineEdges.north - ukraineEdges.south,
-		deltaLong = ukraineEdges.east - ukraineEdges.west,
-		center = {
-			top: top+height/2, 
-			left: left+width/2
-		};
-		
-		circleCoordinates = {
-			width: (ukraineEdges.width / 100) * width * 100 / wrapperWidth,
-			height: (ukraineEdges.height / 100) *height * 100 / wrapperHeight,
-			left:  ukraineEdges.west + (deltaLong / 100) * center.left * 100 / wrapperWidth,
-			top:  ukraineEdges.north - (deltaLat / 100) * center.top * 100 / wrapperHeight,
-		}
-
-		circle.attr('lat', circleCoordinates.top).attr('long', circleCoordinates.left).attr('radius', circleCoordinates.width)
-		window.circles.push({
-			lat: circleCoordinates.top,
-			long: circleCoordinates.left,
-			radius: circleCoordinates.width
-		});
-
-		console.log(deltaLat,circleCoordinates);
-})
-	
-}
-
-jQuery(document).on('click', '[role="show-all"]', function(){
+    jQuery(`#${id}`).removeAttr('action');
+}).on('click', '[role="show-all"]', function () {
     jQuery(this).prev().toggleClass('expanded');
 });
+
+jQuery(window).on('resize', function () {
+    resizeMap();
+});
+
+let resizeMap = () => {
+    let windowHeight = window.innerHeight,
+        windowWidth = window.innerWidth,
+        mapSupposedNewHeight = windowHeight,
+        mapSupposedNewWidth = mapSupposedNewHeight * UKRAINE_PROPORTIONS;
+
+    //console.log(mapSupposedNewWidth);
+
+    if (mapSupposedNewWidth > windowWidth) {
+        var cssObj = {
+            width: '100%',
+            height: windowWidth / UKRAINE_PROPORTIONS
+        }
+    }else{
+        var cssObj = {
+            width: mapSupposedNewWidth,
+            height: mapSupposedNewHeight
+        }
+    }
+
+    mapWrapper.css({height: jQuery(window).height()})
+        .css(cssObj)
+        .parent()
+        .next()
+        .css({'margin-top': cssObj.height+ 30});
+}
+
+let getCircles = () => {
+    window.circles = [];
+    jQuery('.region-circle:not(.rendered[lat][long][radius])').each(function () {
+        var circle = jQuery(this),
+            wrapper = circle.parent(),
+            width = circle.outerWidth(),
+            height = circle.outerHeight(),
+            left = parseFloat(circle.css('left')),
+            top = parseFloat(circle.css('top')),
+            wrapperWidth = wrapper.outerWidth(),
+            wrapperHeight = wrapper.outerHeight(),
+            deltaLat = ukraineEdges.north - ukraineEdges.south,
+            deltaLong = ukraineEdges.east - ukraineEdges.west,
+            center = {
+                top: top + height / 2,
+                left: left + width / 2
+            };
+
+        circleCoordinates = {
+            width: (ukraineEdges.width / 100) * width * 100 / wrapperWidth,
+            height: (ukraineEdges.height / 100) * height * 100 / wrapperHeight,
+            left: ukraineEdges.west + (deltaLong / 100) * center.left * 100 / wrapperWidth,
+            top: ukraineEdges.north - (deltaLat / 100) * center.top * 100 / wrapperHeight,
+        }
+
+        circle.attr('lat', circleCoordinates.top).attr('long', circleCoordinates.left).attr('radius', circleCoordinates.width)
+        window.circles.push({
+            lat: circleCoordinates.top,
+            long: circleCoordinates.left,
+            radius: circleCoordinates.width
+        });
+
+        console.log(deltaLat, circleCoordinates);
+    })
+
+}
+
