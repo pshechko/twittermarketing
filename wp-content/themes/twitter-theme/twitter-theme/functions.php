@@ -108,7 +108,8 @@ add_action("initt", function () {
     }
 });
 
-add_action('initt', function () {
+add_action('init', function () {
     global $regions;
+    var_dump(3);die();
     \TwitterModel\Tweet::updateFromApi('iphone', 30);
 });

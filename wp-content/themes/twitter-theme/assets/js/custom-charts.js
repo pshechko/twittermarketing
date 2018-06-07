@@ -39,31 +39,96 @@ function drawCharts() {
         for (let circle of region.circles)
             tweets = tweets.concat(circle.tweets);
 
-        let tweetsByDay = {};
+        tweets.sort((a ,b) => {
+            a = new Date(a.date);
+            b = new Date(b.date);
+            if (a < b) 
+                return -1;
+            if (a>b) 
+                return 1;
+            return 0;
+        });
+
+        region.tweetsByDay = {};
         let minDate = new Date();
         let today = new Date();
+        let maxDate = new Date();
+        //maxDate.setDate(minDate.getDate() - 10000);
         minDate.setDate(minDate.getDate() + 1);
 
         for (let tweet of tweets) {
-            let date = new Date(tweet.date);
-            let dateLabel = MONTH_NAMES[date.getMonth()] + " " + date.getDate();
-            if (date < minDate) {
-                minDate = date;
-            }
-
-            if (!tweetsByDay.hasOwnProperty(dateLabel))
-                tweetsByDay[dateLabel] = [];
-
-            tweetsByDay[dateLabel].push(tweet);
+            dateObj = new Date(tweet.date);
+            //console.log(tweet.id, tweet.date, '||' ,dateObj);
+            if (dateObj < minDate) 
+                minDate = dateObj;
+            if(dateObj > maxDate)
+                maxDate = dateObj;
         }
 
-        for(let dateIterator = minDate; dateIterator <= today; dateIterator.setDate(dateIterator.getDate() + 1)){
+        for(let dateIterator = minDate; dateIterator <= maxDate; dateIterator.setDate(dateIterator.getDate() + 1)){
             let dateLabel = MONTH_NAMES[dateIterator.getMonth()] + " " + dateIterator.getDate();
-            if (!tweetsByDay.hasOwnProperty(dateLabel))
-                tweetsByDay[dateLabel] = [];
+            region.tweetsByDay[dateLabel] = [];
+        }
+        
+        for (let tweet of tweets) {
+            dateObj = new Date(tweet.date);
+            let dateLabel = MONTH_NAMES[dateObj.getMonth()] + " " + dateObj.getDate();
+            //console.log(tweet.id,dateLabel,MONTH_NAMES[dateObj.getMonth()],region.tweetsByDay,tweet)
+            region.tweetsByDay[dateLabel].push(tweet);
         }
 
-        console.log(tweetsByDay);
+        
 
+        
+        let dailyData = [];
+        let lineChartData = [
+            ['Число', 'Твіти']
+        ];
+
+        let lineChartTweetTotalCount = 0;
+        let counter = 0;
+        let datesNum = Object.keys(region.tweetsByDay).length;
+        for (let dateLabelIndex in region.tweetsByDay){
+            
+            let lineChartTweetDailyCount = region.tweetsByDay[dateLabelIndex].length;
+            lineChartTweetTotalCount += lineChartTweetDailyCount
+
+            console.log(region.tweetsByDay.length, counter, counter === 0, counter === region.tweetsByDay.length -1,counter === parseInt(region.tweetsByDay.length/2));
+
+            let label = counter === 0 || 
+                    counter === datesNum -1 || 
+                    counter === parseInt(datesNum/2)?
+                        dateLabelIndex:
+                        "";
+
+            lineChartData.push([dateLabelIndex, lineChartTweetTotalCount]);
+            dailyData.push([dateLabelIndex, lineChartTweetDailyCount]);
+            counter++;
+        }
+
+
+        let lineChartOptions = {
+            title: '',
+            curveType: 'function',
+            legend: { position: 'none' },
+            hAxis: {showTextEvery: 5},
+            vAxis: {
+                minValue: 0,
+                viewWindow: {
+                    min: 0
+                }
+                },
+            colors: ['#433080'],
+          };
+        
+        var lineChart = new google.visualization.LineChart(document.getElementById(`line-chart-1-region-${region.id}`));
+        lineChart.draw(google.visualization.arrayToDataTable(lineChartData), lineChartOptions);
+
+        console.log(region.label,dailyData,lineChartData);
+
+        regions[regionId] = region;
     }
+
+   
+
 }
