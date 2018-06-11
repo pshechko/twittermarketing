@@ -18,6 +18,15 @@ $marker-color: #fff;
     &-center {
       justify-content: center;
     }
+    &-space-between{
+      justify-content: space-between;
+    }
+  }
+
+  &.flex-wrap{
+    &-wrap{
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -250,5 +259,61 @@ section {
         width: $i*1%;
       }
     }
+  }
+}
+
+.modal{
+  background-color: #fff;
+}
+
+#modal-region-compare {
+  ul.region-select {
+    list-style-type: none;
+    padding-left: 0;
+
+    input[type='checkbox']{
+      display: none;
+
+      &+label button {
+          padding: 6px 18px;
+      }
+
+      &:not(:checked)+label button{
+        background-color: $min-color;
+        color: $max-color;
+
+        &:hover(){
+          background-color: lighten($max-color, 15%);
+        }
+      }
+    }
+  }
+}
+
+
+button#show-compare{
+  position:  fixed;
+  right: 0;
+  top: 50%;
+  border-radius: 20px 0 0 20px;
+  padding: 15px 15px;
+  font-size:  18px;
+  line-height: 18px;
+
+  &:after {
+    content: "";
+    background: transparent;
+    padding: 15px 0;
+    content: "Порівняти";
+    transition: all 0.5s;
+    width: 0;
+    overflow:  hidden;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &:hover:after {
+    width:  115px;
+    padding: 15px;
   }
 }

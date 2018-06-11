@@ -69,21 +69,28 @@
 </section>
 
 
+
 <?php
 foreach ($regions as $region):
     ?>
+    
     <div class="modal fade" id="modal-region-<?=$region->id;?>" tabindex="-1" role="dialog"
          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle"><?=$region->name;?></h5>
+                    <h3 class="modal-title" id="exampleModalLongTitle"><?=$region->name;?></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div id="line-chart-1-region-<?=$region->id;?>"></div>
+                    <div class="">
+                        <div id="line-chart-1-region-<?=$region->id;?>"></div>
+                    </div>
+                    <div class="">
+                        <div id="column-chart-1-region-<?=$region->id;?>"></div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
@@ -95,6 +102,64 @@ foreach ($regions as $region):
 endforeach;
 ?>
 
+ <div class="modal fade" id="modal-region-compare" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Порівняння</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class='region-select-wrapper'>
+                        <ul class='region-select flex-wrapper horizontal-align-space-between flex-wrap-wrap'>
+                        <?php
+                        foreach ($regions as $region):
+                            ?>
+                            <li>
+                                <input type="checkbox" 
+                                    value="<?=$region->id;?>" 
+                                    id="region-select-item-<?=$region->id;?>"
+                                    name="region-select-item"/>
+                                <label for="region-select-item-<?=$region->id;?>">
+                                <button 
+                                    type="button" 
+                                    class="btn btn-primary" 
+                                    data-toggle="tooltip" 
+                                    data-placement="top" 
+                                    title="<?=$region->name;?>">
+                                        <?=$region->label;?>
+                                </button>
+                                </label>
+                            </li>
+                            <?php
+                        endforeach;
+                        ?>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <div id="line-chart-1-region-compare"></div>
+                    </div>
+                    <div class="">
+                        <div id="column-chart-1-region-compare"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" 
+        data-target="#modal-region-compare"
+        data-toggle="modal"
+        class="btn btn-primary"
+        id="show-compare">
+        <span class="glyphicon glyphicon-transfer"></span>
+    </button>
 
 </body>
 

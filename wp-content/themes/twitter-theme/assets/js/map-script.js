@@ -43,6 +43,9 @@ let calculateTheDistance = (φA, λA, φB, λB) => {
 
 jQuery(document).ready(function () {
 
+    jQuery('[data-toggle="tooltip"]').tooltip()
+
+
     window.mapWrapper = jQuery('[role="map-wrapper"]');
 
     mapBackground.prependTo(mapWrapper);
@@ -136,6 +139,8 @@ jQuery(document).on('click', '#ukraine-map-text-overlay g[id] path, g[id] text',
     jQuery(`#${id}`).removeAttr('action');
 }).on('click', '[role="show-all"]', function () {
     jQuery(this).prev().toggleClass('expanded');
+}).on('click', "ul.region-select input[type='checkbox'] + label button", function(){
+	jQuery(this).parent().click();
 });
 
 jQuery(window).on('resize', function () {

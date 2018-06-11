@@ -37,7 +37,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_register_script('map-script', THEME_URL . "/assets/js/map-script.js", ['class-marker', 'class-circle', 'google-charts']);
     wp_register_script('google-charts', THEME_URL . "/assets/js/google-charts-loader.js");
     wp_register_script('custom-charts-script', THEME_URL . "/assets/js/custom-charts.js", ['map-script']);
-    wp_register_script('bootstrap-script', THEME_URL . "/assets/js/bootstrap.min.js", ['jquery']);
+    wp_register_script('bootstrap-script', THEME_URL . "/assets/js/bootstrap.min.js", ['jquery', 'popper-script']);
+    wp_register_script('popper-script', THEME_URL . "/assets/js/popper.min.js");
 
     $markerPattern = file_get_contents(THEME_DIR . '/assets/map-patterns/marker-pattern.svg');
     $cirlePattern = file_get_contents(THEME_DIR . '/assets//map-patterns/circle-pattern.html');
@@ -63,6 +64,7 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('map-script');
     wp_enqueue_script('custom-charts-script');
     wp_enqueue_script('bootstrap-script');
+    wp_enqueue_script('popper-script');
 });
 
 add_action('wp_print_styles', function () {

@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a52c6b6-5662-41c2-93f6-1fdc4f7db97d" name="Default" comment="" />
+    <list default="true" id="2a52c6b6-5662-41c2-93f6-1fdc4f7db97d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/custom-charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/custom-charts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/assets/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/assets/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/assets/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/abraham/twitteroauth/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/abraham/twitteroauth/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/abraham/twitteroauth/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/abraham/twitteroauth/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/abraham/twitteroauth/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/abraham/twitteroauth/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/abraham/twitteroauth/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/abraham/twitteroauth/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/abraham/twitteroauth/src/cacert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/abraham/twitteroauth/src/cacert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/twitter-theme/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/abraham/twitteroauth/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/abraham/twitteroauth/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/abraham/twitteroauth/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/abraham/twitteroauth/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/abraham/twitteroauth/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/abraham/twitteroauth/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/abraham/twitteroauth/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/abraham/twitteroauth/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/abraham/twitteroauth/src/cacert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/abraham/twitteroauth/src/cacert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twitter-theme/vendor/composer/installed.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,16 +58,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/029bd52c-f582-4f6f-a0de-63debb030a4d/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/css/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="19" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="u566430076_gtrap-migrate-20180606103857.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Downloads/u566430076_gtrap-migrate-20180606103857.sql">
+      <file leaf-file-name="circle-pattern.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/map-patterns/circle-pattern.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.circle.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/class.circle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map-script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/map-script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="99" column="61" selection-start-line="99" selection-start-column="56" selection-end-line="99" selection-end-column="61" />
+              <folding>
+                <element signature="e#3642#4830#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom-charts.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/custom-charts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/bootstrap.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+              <folding>
+                <element signature="e#1#8#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-735">
+              <caret line="20" column="8" selection-start-line="20" selection-end-line="20" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map-pattern.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/map-patterns/map-pattern.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="843">
+              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+              <folding>
+                <element signature="e#61909#62109#2" expanded="true" />
+                <element signature="e#62317#62466#2" expanded="true" />
+                <element signature="e#62968#63114#2" expanded="true" />
+                <element signature="e#63415#63581#1" expanded="true" />
+                <element signature="e#74301#74544#2" expanded="true" />
+                <element signature="e#75411#75660#2" expanded="true" />
+                <element signature="e#101957#102147#2" expanded="true" />
+                <element signature="e#102193#102383#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +168,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>512</find>
+      <find>ukraine-map</find>
+      <find>circl</find>
+      <find>Circle</find>
+      <find>regionI</find>
+      <find>overlay-UA-</find>
+      <find>conca</find>
+      <find>''</find>
+      <find>&quot;&quot;</find>
+      <find>cir</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/twitter-theme/assets</dir>
@@ -74,6 +194,20 @@
         <option value="$PROJECT_DIR$/twitter-theme/assets/css/main.css" />
         <option value="$PROJECT_DIR$/twitter-theme/index.php" />
         <option value="$PROJECT_DIR$/twitter-theme/assets/css/main.scss" />
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/wp-includes/js/jquery/jquery.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/map-patterns/circle-pattern.html" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/class.circle.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/css/main.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twitter-theme/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/map-patterns/map-pattern.svg" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/map-script.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twitter-theme/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/custom-charts.js" />
       </list>
     </option>
   </component>
@@ -110,25 +244,96 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="twitterdata" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twitterdata" type="462c0819:PsiDirectoryNode" />
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="twitter-theme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="twitter-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="twitter-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="twitter-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="twitter-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="map-patterns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-includes" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitterdata.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitterdata.local" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-includes" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/u566430076_gtrap-migrate-20180606103857.sql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -157,26 +362,28 @@
       <updated>1528123020825</updated>
       <workItem from="1528123022060" duration="1465000" />
       <workItem from="1528124561530" duration="7292000" />
-      <workItem from="1528281343746" duration="1236000" />
+      <workItem from="1528281343746" duration="1716000" />
+      <workItem from="1528283892513" duration="16704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9993000" />
+    <option name="totallyTimeSpent" value="27177000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="1985" y="24" width="1855" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25538972" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25815368" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50193477" side_tool="true" weight="0.32984293" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.32946378" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49806523" weight="0.32984293" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49806523" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32948583" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33945945" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -191,31 +398,113 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49806523" weight="0.32984293" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25262576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50193477" side_tool="true" visible="true" weight="0.32984293" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/029bd52c-f582-4f6f-a0de-63debb030a4d/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/u566430076_gtrap-migrate-20180606103857.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3240">
+          <caret line="216" column="35" selection-start-line="216" selection-start-column="35" selection-end-line="216" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#1#8#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/functions.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/twitter-theme/index.php" />
     <entry file="file://$PROJECT_DIR$/twitter-theme/assets/css/main.css" />
     <entry file="file://$PROJECT_DIR$/twitter-theme/functions.php" />
@@ -230,8 +519,144 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/u566430076_gtrap-migrate-20180606103857.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+        <state relative-caret-position="255">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/js/jquery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="3" column="31510" selection-start-line="3" selection-start-column="31510" selection-end-line="3" selection-end-column="31510" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#6#190#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="411" column="21" selection-start-line="411" selection-start-column="21" selection-end-line="411" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/map-patterns/map-pattern.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="20" column="8" selection-start-line="20" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/class.circle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/map-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="99" column="61" selection-start-line="99" selection-start-column="56" selection-end-line="99" selection-end-column="61" />
+          <folding>
+            <element signature="e#3642#4830#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+          <folding>
+            <element signature="e#1#8#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="843">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding>
+            <element signature="e#61909#62109#2" expanded="true" />
+            <element signature="e#62317#62466#2" expanded="true" />
+            <element signature="e#62968#63114#2" expanded="true" />
+            <element signature="e#63415#63581#1" expanded="true" />
+            <element signature="e#74301#74544#2" expanded="true" />
+            <element signature="e#75411#75660#2" expanded="true" />
+            <element signature="e#101957#102147#2" expanded="true" />
+            <element signature="e#102193#102383#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/map-patterns/circle-pattern.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twitter-theme/assets/js/custom-charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
         </state>
       </provider>
     </entry>
