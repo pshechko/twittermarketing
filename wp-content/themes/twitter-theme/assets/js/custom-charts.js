@@ -30,8 +30,7 @@ function drawCharts() {
     var chart = new google.visualization.ColumnChart(document.getElementById('histogram1'));
     chart.draw(data, options);
 
-
-    console.log(window.regions);
+  
 
     for (let regionId in window.regions) {
         let region = regions[regionId],
@@ -157,17 +156,17 @@ function drawCharts() {
     window.compareColChartOptions = {
         'legend': 'bottom',
         hAxis: {showTextEvery: 5},
-
-       // chartArea: {
-         //   width: '50%'
-       // }
     };
+
+    window.comparePieChartOptions = {};
     
     window.compareLineChart = new google.visualization.LineChart(document.getElementById(`line-chart-1-region-compare`));
     window.compareColChart = new google.charts.Bar(document.getElementById(`column-chart-1-region-compare`));
+    window.comparePieChart = new google.visualization.PieChart(document.getElementById(`pie-chart-1-region-compare`));
 
-    compareLineChart.draw(google.visualization.arrayToDataTable([]), compareLineChartOptions);
-    compareColChart.draw(google.visualization.arrayToDataTable([]), compareColChartOptions);
+
+    //compareLineChart.draw(google.visualization.arrayToDataTable([]), compareLineChartOptions);
+    //compareColChart.draw(google.visualization.arrayToDataTable([]), compareColChartOptions);
 
    
 
@@ -190,7 +189,11 @@ var prepareRegionsToCompare = (...regionIds) =>{
     //let tweets = [];
     console.log(regionIds);
 
-    for(let regionId of regionIds)
+    let totalPercentage = 0;
+
+    for(let regionId of regionIds){
+        let region = window.regions[regionId];
+        totalPercentage += region.percentage;
         for(let circle of window.regions[regionId].circles)
             for(let tweet of circle.tweets){
                 dateObj = new Date(tweet.date);
@@ -199,10 +202,14 @@ var prepareRegionsToCompare = (...regionIds) =>{
                 if(dateObj > maxDate)
                     maxDate = dateObj;
             }
+    }
    
     let lastResults = {};
     let lineChartTable = [["Число"]];
     let colChartTable = [["Число"]];
+    let pieChartTable = [["Регіон", "Відсоток твітів"]];
+
+
     for(let dateIterator = minDate, i = 0; dateIterator < maxDate; dateIterator.setDate(dateIterator.getDate() + 1), i++){
         let dateLabel = MONTH_NAMES[dateIterator.getMonth()] + " " + dateIterator.getDate();
         let lineChartRow = [dateLabel];
@@ -219,6 +226,7 @@ var prepareRegionsToCompare = (...regionIds) =>{
                 lineChartTable[0].push(region.name); 
                 colChartTable[0].push(region.name); 
                 lastResults[region.id] = 0;
+                pieChartTable.push([region.name, region.percentage * 100 / totalPercentage]);
             }
 
             if(false === lineChartVal){
@@ -237,12 +245,20 @@ var prepareRegionsToCompare = (...regionIds) =>{
         //region.tweetsByDay[dateLabel] = [];
     }
 
+    if(regionIds.length>5){
+        comparePieChartOptions.sliceVisibilityThreshold = .04
+    }
+    else{
+        delete comparePieChartOptions.sliceVisibilityThreshold;
+    }
+
+    comparePieChart.draw(google.visualization.arrayToDataTable(pieChartTable), google.charts.Bar.convertOptions(comparePieChartOptions));
     compareLineChart.draw(google.visualization.arrayToDataTable(lineChartTable), google.charts.Bar.convertOptions(compareLineChartOptions));
     compareColChart.draw(google.visualization.arrayToDataTable(colChartTable), google.charts.Bar.convertOptions(window.compareColChartOptions));
 
     
     
-    return [lineChartTable, colChartTable];
+    return [lineChartTable, colChartTable, pieChartTable];
 }
 
 jQuery(document).on('change', "[name='region-select-item']", prepareRegionsToCompare);

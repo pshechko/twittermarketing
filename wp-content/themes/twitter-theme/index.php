@@ -145,6 +145,9 @@ endforeach;
                     <div class="">
                         <div id="column-chart-1-region-compare"></div>
                     </div>
+                    <div class="">
+                        <div id="pie-chart-1-region-compare"></div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
